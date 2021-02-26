@@ -1,0 +1,225 @@
+@import url("../css/font.css");
+
+
+
+html,body{ 
+    margin:0%;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+
+
+:root{
+     /* theme colors */
+    --text-CeladonBlue: #4281A4;
+    --text-Verdigris: #48A9A6;
+    --text-Franchbistre: #82705E;
+    --text-Burlywood: #D4B483;
+    --text-blackshadow: #c5bec2;
+    
+    /* gradiant color */
+    --sky:linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    
+    
+     /* theme font-family */
+    --Righteous:'Righteous',cursive;
+    --Abel:'Abel',cursive;
+    --IBM_plex_Sans:'IBM_plex_Sans',cursive;
+    --Exo:'Exo',cursive;
+    --Raleway:'Raleway',cursive;
+}
+
+
+
+/* ------------- Global Classes ---------- */
+
+a{
+    text-decoration: none;
+    color:#82705E;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--IBM_plex_Sans);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Exo);
+}
+
+h3{
+    font-family: var(--Exo);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 1.3rem;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-family: var(--IBM_plex_Sans);
+    
+}
+/* -------x------ Global Classes -----x----- */
+
+/* ------------- navbar -------------- */
+
+.nav{
+    background-color: var(--text-blackshadow);
+    padding:0 2rem;
+    height:0rem;
+    min-height:10vh;
+    overflow:hidden;
+    transition:height 0.6s ease-in-out;
+}
+
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+     top: 0%;
+     width: 89%;
+     cursor: pointer;
+     display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display:flex;
+    justify-content:flex-end;
+    padding: 1.3rem 0.5rem;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.5rem;
+    color: gray;
+    
+}
+
+.collapse{
+      height:25rem;
+}
+
+.nav .nav-items{
+    list-style-type:none;
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding:1.4rem 1rem;
+    font-size:1.1rem;
+    position:relative;
+    font-family:var(--Raleway)
+    
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color:#488ea980;
+    
+}
+
+.nav-brand a{ 
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    display: block;
+    font-family:var(--Righteous)
+    
+    
+}
+
+.nav .social i{
+    padding: 1.5rem 0;
+}
+
+.nav .social i:hover{
+    padding: 0 .2rem;
+    color:#48A9A6
+    
+}
+
+/* ------x------- navbar --------x------ */
+
+/*------x------- Main Content ------x------*/
+/*------x------- site title -------x------*/
+
+
+main .site-title{
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url("../assets/Background-image.png")
+    
+
+}
+
+main .site-title .site-background{
+    padding: 10rem;
+    text-align: center;
+    color: #dfd8d1 ;
+}
+
+main .site-title h1,h3{
+    margin: 0.3rem;
+}     
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+    
+}
+
+main .site-title .btn:hover{
+    background: rgba(128, 128, 128, 0.295);
+    border: 1px solid var(--text-Burlywood);
+    color: var(--text-Burlywood);
+}
+
+
+
+
+
+
+ 
+/*     Viewport Less than or equal to 720      */
+
+@media only screen and (max-width:720px){
+    
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction:column;
+    } 
+    
+    .nav .toggle-collapse{
+        display: initial;
+ 
+    }
+    
+
+
+}
+
+@media only screen and (min-width:720px){
+
+
+    .nav{
+    background-color: var(--text-blackshadow);
+    padding:0 2rem;
+    height:0rem;
+    min-height:10vh;
+    overflow:hidden;
+    transition:height 0.6s ease-in-out;
+}
+}
