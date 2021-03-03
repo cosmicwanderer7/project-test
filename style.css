@@ -188,6 +188,7 @@ ul{
     padding: 1rem 0;
     display: block;
     font-family:var(--Righteous)
+    position:relative;
     
     
 }
@@ -240,9 +241,7 @@ main .site-title .btn:hover{
  
     }
     
- .nav .social i{
-    padding: 5rem 0;
-}
+
 
 }
 
